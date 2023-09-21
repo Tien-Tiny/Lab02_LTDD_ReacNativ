@@ -1,7 +1,7 @@
-var url = "https://api-generator.retool.com/xAtE1F/data";
-//var url = 'https://jsonplaceholder.typicode.com/todos';
-var xhr = new XMLHttpRequest()
-xhr.open('GET', url, true)
+// Delete a user
+var url = "https://retoolapi.dev/xAtE1F/data";
+var xhr = new XMLHttpRequest();
+xhr.open("DELETE", url + '/12', true);
 xhr.onload = function () {
     var users = JSON.parse(xhr.responseText);
     if (xhr.readyState == 4 && xhr.status == "200") {
